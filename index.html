@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="introHeading">
+    <h1>This is a Heading</h1>
+    <hr>
+    </div>
+    <div class="introText">
+    <p>HTML does not respect whitespace, and that is racist</p>
+    </div>
+    <div class="tags">
+    <pre><strong>This text is bold, but do not use &lt;bold&gt;, use &lt;strong&gt;.</strong></pre>
+    <pre><em>This text is italicized, but do not use &lt;i&gt;, use &lt;em&gt;. Both of these are for the purpose of screenreaders</em></pre>
+    <pre><mark>This text is highlighted using &lt;mark&gt;</mark></pre>
+    <pre><del>This text is strikethrough using &lt;del&gt;</del></pre>
+    <pre>the word <sub>subscript</sub> is using &lt;sub&gt;</pre>
+    <pre>the word <sup>superscript</sup> is using &lt;sup&gt;</pre>
+    </div>
+    <div class="para1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dicta atque consequuntur nemo quod facere tempore ab qui debitis officia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta enim numquam possimus id iure error, minus quaerat nihil odio porro.</p>
+    </div>
+    <br>
+    <div class="para2">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sunt explicabo ut beatae alias illo dolores temporibus est voluptatem ipsam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis asperiores animi eligendi nesciunt aliquam exercitationem blanditiis quibusdam corporis autem similique.</p>
+    <br>
+    </div>
+    <h3>Specificity and CSS</h3>
+    <p>Alright, so in HTML you can have attributes called <strong>class</strong> and <strong>id</strong>, these are both used for the purposes of organizing specific things into a group so they can be changed/editted by CSS and JavaScript. Classes can be used more than once, ids cannot, and ids are more speicifc than classes, which means that they ids will always override classes when they are changed. Typically, you want to save ids for javaScript. Now lets talk specificity, if you have something inline, it wins every time, typically you want to put that in a &lt;div&gt; or in the head. Back to CSS, in the Lorem above, I have two &lt;div&gt; with classes (class="") and named it para1, then in CSS, I had it make everything with the class para1, change its background color to blue. I repeated the same thing with the class para2 and the color green.</p>
+    <div class="codeBox">
+    <pre>.para1{</pre>
+    <pre>    background-color: royalblue;</pre>
+    <pre>}</pre>
+    <br>
+    <pre>.para2{</pre>
+    <pre>    background-color: seagreen;</pre>
+    <pre>}</pre>
+    </div>
+    <div class="image">
+    <img title="Garfield hates mondays" src="./Images/garfield_Hates_Mondays.png" alt="Garfield hates mondays" width="200" height="200">
+    <br>
+    <p>This image uses a relative path, use them. Do NOT use abosolute paths, it could cause issues. Relative paths are on your computer, abosoulte paths are on the internet</p>
+    </div>
+    <br>
+    <div class="tableText">
+    <p>Tables are tables, if you didn't know, they store data and make them look nice and pretty. And no, our table is not broken.</p>
+    </div>
+    <br>
+    <div class="table">
+    <table width="100%">
+        <tr>
+            <th>Top Lane</th>
+            <th>Mid Lane</th>
+            <th>Bot Lane</th>
+        </tr>
+        <tr>
+            <td>Garen</td>
+            <td>Annie</td>
+            <td>Jinx</td>
+        </tr>
+        <tr>
+            <td>Darius</td>
+            <td>LeBlanc</td>
+            <td>Ashe</td>
+        </tr>
+    </table>
+    </div> 
+    <div class="form">
+    <form action="">
+        <label for="fname">First name: </label>
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="lname">Last name: </label>
+        <input type="text" id="lname" name="lname">
+        <br>
+        <select id="cars" name="cars">
+            <option value="top lane">Top Lane</option>
+            <option value="jungle">Jungle</option>
+            <option value="mid lane">Middle Lane</option>
+            <option value="bot lane">Bottom Lane</option>
+            <option value="support">Support</option>
+            <option value="select role" selected >Select a role</option>
+        </select>
+    </form>
+    </div>
+    <div class="contactInfo">
+    <h2>Contact me!</h2>
+    <a href="https://www.reddit.com/user/Brasen-Winchell" target="_blank">Reddit</a>
+    </div>
+</body>
+</html>

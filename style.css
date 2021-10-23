@@ -1,0 +1,25 @@
+.para1{
+    background-color: royalblue;
+}
+
+.para2{
+    background-color: seagreen;
+}
+
+td {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.codeBox{
+    border: 1px solid black;
+}
+
+.introText{
+    color: darkcyan;
+}
